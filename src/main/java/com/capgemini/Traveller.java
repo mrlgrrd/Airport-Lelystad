@@ -1,6 +1,9 @@
 package com.capgemini;
 
 public class Traveller {
+    public Traveller(boolean isCheckedIn){
+        this.isCheckedIn = isCheckedIn;
+    }
 
     private String firstName;
 
