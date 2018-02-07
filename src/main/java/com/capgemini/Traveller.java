@@ -8,7 +8,11 @@ public class Traveller {
 
     private String destination;
 
+    private ENationality eNationality;
+
     private int age;
+
+    private int passportNumber;
 
     private boolean isCheckedIn;
 
@@ -17,5 +21,13 @@ public class Traveller {
     private boolean hasCarryOnLuggage;
 
     private boolean hasBaggage;
+
+    private boolean needsAssistance;
+
+    private boolean isHungry;
+
+    private boolean isThirsty;
+
+    private boolean needsBathroom;
 
 }
