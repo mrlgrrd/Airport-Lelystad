@@ -1,22 +1,23 @@
 package com.capgemini;
 
+import com.capgemini.person.traveller.Traveller;
+
+/*
+ * method checkIn checks if the traveller is allready checked in.
+ * If it is not checked in, the method looks if the passenger is allowed to use the self check in
+ * If the passenger is allowed to use the self check in -> process self check in
+ */
+
 public class CheckIn {
     // this boolean states if the traveller is allowed to use the self check in desk
     private boolean selfCheckIn;
-
-    /*
-     * method checkIn checks if the traveller is allready checked in.
-     * If it is not checked in, the method looks if the passenger is allowed to use the self check in
-     * If the passenger is allowed to use the self check in -> process self check in
-     */
 
 
     //  public void checkIn() {
 
     // execute the self check in. check if self check in is allowed
-    public void selfCheckIn(boolean selfCheckIn) {
-        if (selfCheckIn) {
-            this.selfCheckIn = true;
+    public void selfCheckIn() {
+        if (this.selfCheckIn) {
             System.out.println("You have checked yourself in");
         } else {
             System.out.println("You are not allowed to use Self Check In.");
@@ -24,11 +25,16 @@ public class CheckIn {
     }
 
     // execute the check in at the desk. check if the check in is allowed
-    public void checkInDesk(boolean checkInDesk) {
-        if (checkInDesk) {
+    public void checkInDesk(boolean isCheckedIn) {
+        if (!isCheckedIn) {
+            isCheckedIn = true;
             System.out.println("You have been checked in.");
+        }
+        if (isCheckedIn) {
+            System.out.println("You are already checked in! No need to do that again.");
         } else {
-            System.out.println("You are not allowed to use the check in desk");
+            System.out.println("You are not allowed to use the check in desk.");
+
         }
     }
 
@@ -42,3 +48,7 @@ public class CheckIn {
     }
     // }
 }
+
+
+
+
