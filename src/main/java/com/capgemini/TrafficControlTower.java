@@ -8,7 +8,7 @@ public class TrafficControlTower {
 
     private boolean permissionToLand;
 
-    private Plane plane;
+    //private Plane plane;
 
     private Runway runway;
 
