@@ -71,7 +71,7 @@ public class Flight {
     }
 
     public Enum getEFlightDestinationType() {
-        return EFlightDestinationType;
+        return flightDestinationType;
     }
 
     public void setEFlightDestinationType(Enum EFlightDestinationType) {
