@@ -18,6 +18,7 @@ public class CheckIn {
         }
         else {
             System.out.println("You are not allowed to use the check in desk");
+        }
     }
     // execute the baggage drop off. check if the baggage drop off is allowed
     public void baggageDropOff(boolean baggageDropOff){
