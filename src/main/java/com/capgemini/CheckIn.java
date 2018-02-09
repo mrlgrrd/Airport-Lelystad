@@ -1,6 +1,10 @@
 package com.capgemini;
 
+import com.capgemini.person.traveller.Traveller;
+
 public class CheckIn {
+
+    private Traveller traveller;
 
     // execute the self check in. check if self check in is allowed
     public void selfCheckIn(boolean selfCheckIn) {
@@ -12,11 +16,14 @@ public class CheckIn {
     }
 
     // execute the check in at the desk. check if the check in is allowed
-    public void checkInDesk(boolean checkInDesk) {
-        if (checkInDesk) {
+    public void checkInDesk(boolean isCheckedIn) {
+        if (!isCheckedIn) {
+            isCheckedIn = true;
             System.out.println("You have been checked in.");
+        } if (isCheckedIn) {
+            System.out.println("You are already checked in! No need to do that again.");
         } else {
-            System.out.println("You are not allowed to use the check in desk");
+            System.out.println("You are not allowed to use the check in desk.");
         }
     }
 
