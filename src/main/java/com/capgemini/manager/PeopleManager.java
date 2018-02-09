@@ -1,4 +1,4 @@
 package com.capgemini.manager;
 
-public class PersonManager {
+public class PeopleManager {
 }
