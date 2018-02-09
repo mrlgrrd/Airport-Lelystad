@@ -1,7 +1,7 @@
 package com.capgemini.traveller;
 
 import com.capgemini.ENationality;
-import com.capgemini.Person;
+import com.capgemini.person.Person;
 
 public class Traveller extends Person {
 
