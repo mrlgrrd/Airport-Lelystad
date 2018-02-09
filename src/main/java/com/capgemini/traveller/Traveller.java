@@ -6,7 +6,9 @@ import com.capgemini.Person;
 public class Traveller extends Person {
 
     // Constructor
-
+    {
+        System.out.println("A new traveller entered the airport.");
+    }
     public Traveller(boolean isCheckedIn){
         this.isCheckedIn = isCheckedIn;
     }

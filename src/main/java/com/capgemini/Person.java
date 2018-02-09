@@ -2,9 +2,17 @@ package com.capgemini;
 
 public class Person {
 
+    public Person(){
+
+    }
+
+    public Person(String firstName){
+        this.firstName = firstName;
+    }
+
     // Properties
 
-    private String firstName;
+    public String firstName;
 
     private String lastName;
 
@@ -16,7 +24,7 @@ public class Person {
 
     private double passportNumber;
 
-    private ENationality eNationality;
+    private ENationality nationality;
 
     // Getters and setters
 
@@ -70,10 +78,10 @@ public class Person {
     }
 
     public ENationality geteNationality() {
-        return eNationality;
+        return nationality;
     }
 
     public void seteNationality(ENationality eNationality) {
-        this.eNationality = eNationality;
+        this.nationality = eNationality;
     }
 }
