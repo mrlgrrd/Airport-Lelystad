@@ -20,6 +20,8 @@ public class Traveller extends Person {
 
     private boolean isCheckedIn;
 
+    private boolean securityClearance;
+
     private boolean hasPassedCustoms;
 
     private boolean hasBoardingPass;
