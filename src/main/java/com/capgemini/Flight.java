@@ -8,7 +8,7 @@ public class Flight {
 
     private String destination;
 
-    private Enum EFlightDestinationType;
+    private Enum flightDestinationType;
 
     private String origin;
 
