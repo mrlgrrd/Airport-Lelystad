@@ -41,6 +41,11 @@ public class Traveller extends Person {
 
     private boolean travellerOnPlane;
 
+    // deze method start het check in process
+   /* public class checkIn(){
+
+    }*/
+
     // Getters and setters
 
 
