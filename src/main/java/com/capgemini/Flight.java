@@ -74,7 +74,7 @@ public class Flight {
         return flightDestinationType;
     }
 
-    public void setEFlightDestinationType(Enum EFlightDestinationType) {
-        this.flightDestinationType = EFlightDestinationType;
+    public void setEFlightDestinationType(Enum flightDestinationType) {
+        this.flightDestinationType = flightDestinationType;
     }
 }
