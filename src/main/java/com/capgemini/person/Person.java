@@ -1,4 +1,6 @@
-package com.capgemini;
+package com.capgemini.person;
+
+import com.capgemini.ENationality;
 
 public class Person {
 

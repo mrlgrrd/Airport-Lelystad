@@ -1,6 +1,6 @@
 package com.capgemini;
 
-import com.capgemini.traveller.Traveller;
+import com.capgemini.person.traveller.Traveller;
 
 public class Customs {
 
