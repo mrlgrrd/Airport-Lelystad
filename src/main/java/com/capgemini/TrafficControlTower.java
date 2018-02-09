@@ -2,20 +2,26 @@ package com.capgemini;
 
 public class TrafficControlTower {
 
-    private WindDirection windDirection;
+    private EWindDirection windDirection;
 
     private double windSpeed;
 
-    private boolean permissionToLand;
+    private boolean permissionToUseRunway;
 
     //private Plane plane;
-    //private Runway runway;
+
+    private Runway runway;
 
 
 
-    public static boolean runWayFree(){
+    public boolean askPermissionToLand(){
         // deze geeft boolean terug als runway free is
         // Hier moet if statements komen voor de runway
-        return true;
+        return permissionToUseRunway;
+    }
+
+    public boolean askPermissionToTakeOff(){
+
+        return permissionToUseRunway;
     }
 }

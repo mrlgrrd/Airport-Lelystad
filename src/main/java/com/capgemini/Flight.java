@@ -8,6 +8,8 @@ public class Flight {
 
     private String destination;
 
+    private Enum EFlightDestinationType;
+
     private String origin;
 
     private String flightID;
@@ -66,5 +68,13 @@ public class Flight {
 
     public void setAircraft(Vehicle aircraft) {
         this.aircraft = aircraft;
+    }
+
+    public Enum getEFlightDestinationType() {
+        return EFlightDestinationType;
+    }
+
+    public void setEFlightDestinationType(Enum EFlightDestinationType) {
+        this.EFlightDestinationType = EFlightDestinationType;
     }
 }
