@@ -1,5 +1,7 @@
 package com.capgemini;
 
+import com.capgemini.personnel.Personnel;
+
 public class Security {
 
     private String typePersonnel;
@@ -9,5 +11,7 @@ public class Security {
     private String secLocation;
 
     private String secEmployeeAmount;
+
+    private boolean securityClearance;
 
 }

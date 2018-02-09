@@ -12,5 +12,4 @@ public class Flight {
 
     private double departureTime;
 
-    public Vehicle aircraft;
 }
