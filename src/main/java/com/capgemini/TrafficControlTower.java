@@ -6,7 +6,7 @@ public class TrafficControlTower {
 
     private double windSpeed;
 
-    private boolean permissionToLand;
+    private boolean permissionToUseRunway;
 
     //private Plane plane;
 
@@ -17,11 +17,11 @@ public class TrafficControlTower {
     public boolean askPermissionToLand(){
         // deze geeft boolean terug als runway free is
         // Hier moet if statements komen voor de runway
-        return;
+        return permissionToUseRunway;
     }
 
-    public void askPermissionToTakeOff(){
+    public boolean askPermissionToTakeOff(){
 
-        return;
+        return permissionToUseRunway;
     }
 }
