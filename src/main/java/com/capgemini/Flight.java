@@ -1,5 +1,7 @@
 package com.capgemini;
 
+import com.capgemini.vehicle.Vehicle;
+
 public class Flight {
 
     // Properties
