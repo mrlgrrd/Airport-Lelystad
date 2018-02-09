@@ -1,4 +1,4 @@
-package com.capgemini.Custom;
+package com.capgemini.custom;
 
 import com.capgemini.Customs;
 
