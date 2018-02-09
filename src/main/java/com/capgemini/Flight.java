@@ -1,10 +1,14 @@
 package com.capgemini;
 
+import com.capgemini.vehicle.Vehicle;
+
 public class Flight {
 
     // Properties
 
     private String destination;
+
+    private Enum flightDestinationType;
 
     private String origin;
 
@@ -64,5 +68,13 @@ public class Flight {
 
     public void setAircraft(Vehicle aircraft) {
         this.aircraft = aircraft;
+    }
+
+    public Enum getEFlightDestinationType() {
+        return flightDestinationType;
+    }
+
+    public void setEFlightDestinationType(Enum flightDestinationType) {
+        this.flightDestinationType = flightDestinationType;
     }
 }

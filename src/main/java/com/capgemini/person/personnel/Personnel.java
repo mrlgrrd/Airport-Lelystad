@@ -1,14 +1,12 @@
-package com.capgemini.personnel;
+package com.capgemini.person.personnel;
 
-public class Personnel {
-        private String name;
-        private String IDnumber;
-        private String eMailAddress;
-        private String phoneNumber;
-        private String birthOfDate;
+import com.capgemini.ENationality;
+import com.capgemini.person.Person;
+
+public class Personnel extends Person {
+        // properties
         private String department;
         private String location;
-        private String nationality;
 
         // also have extention of job types like pilot
         private String jobType;
@@ -17,7 +15,6 @@ public class Personnel {
 
         // when going through security
         private boolean securityClearance;
-
         private boolean badge;
 
 

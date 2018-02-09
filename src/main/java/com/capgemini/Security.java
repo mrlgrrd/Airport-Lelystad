@@ -1,6 +1,6 @@
 package com.capgemini;
 
-import com.capgemini.personnel.Personnel;
+import com.capgemini.person.personnel.Personnel;
 
 public class Security {
 
