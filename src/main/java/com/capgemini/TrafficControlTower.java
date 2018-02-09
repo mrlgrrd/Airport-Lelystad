@@ -11,7 +11,7 @@ public class TrafficControlTower {
     //private Plane plane;
 
     private Runway runway;
-    
+
     public boolean askPermissionToLand(){
         // deze geeft boolean terug als runway free is
         // Hier moet if statements komen voor de runway
