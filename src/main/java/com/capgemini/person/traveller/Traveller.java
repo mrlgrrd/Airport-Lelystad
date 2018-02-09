@@ -10,8 +10,7 @@ public class Traveller extends Person {
         System.out.println("A new traveller entered the airport.");
     }
 
-    public Traveller(boolean isCheckedIn, double passportNumber, ENationality eNationality) {
-        this.isCheckedIn = isCheckedIn;
+    public Traveller() {
     }
 
     // Properties
