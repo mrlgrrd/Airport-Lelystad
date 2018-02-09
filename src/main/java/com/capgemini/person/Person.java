@@ -1,10 +1,21 @@
-package com.capgemini;
+package com.capgemini.person;
+
+import com.capgemini.ENationality;
 
 public class Person {
 
-    // Properties
+    public Person(){
 
-    private String firstName;
+    }
+
+    public Person(String firstName){
+        this.firstName = firstName;
+    }
+
+    // Properties
+    private String uniqueNumber;
+
+    public String firstName;
 
     private String lastName;
 
@@ -16,10 +27,18 @@ public class Person {
 
     private double passportNumber;
 
-    private ENationality eNationality;
+    private ENationality nationality;
+
+    private String eMailAddress;
 
     // Getters and setters
+    public String getUniqueNumber() {
+        return uniqueNumber;
+    }
 
+    public void setUniqueNumber(String uniqueNumber) {
+        this.uniqueNumber = uniqueNumber;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -70,10 +89,19 @@ public class Person {
     }
 
     public ENationality geteNationality() {
-        return eNationality;
+        return nationality;
     }
 
     public void seteNationality(ENationality eNationality) {
-        this.eNationality = eNationality;
+        this.nationality = eNationality;
     }
+
+    public String geteMailAddress() {
+        return eMailAddress;
+    }
+
+    public void seteMailAddress(String eMailAddress) {
+        this.eMailAddress = eMailAddress;
+    }
+
 }

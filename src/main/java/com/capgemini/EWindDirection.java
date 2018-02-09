@@ -1,5 +1,5 @@
 package com.capgemini;
 
-public enum WindDirection {
+public enum EWindDirection {
     NORTH, EAST, SOUTH, WEST
 }

@@ -28,5 +28,4 @@ public class CheckIn {
             System.out.println("You are not allowed to use baggage drop off.");
         }
     }
-
 }
