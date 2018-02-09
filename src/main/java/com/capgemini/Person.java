@@ -1,6 +1,6 @@
 package com.capgemini;
 
-public class PersonalDetails {
+public class Person {
 
     // Properties
 
