@@ -4,10 +4,15 @@ import com.capgemini.ENationality;
 
 public class Person {
 
-    public Person(){
+    public Person() {
 
     }
+<<<<<<< HEAD
     public Person(String firstName){
+=======
+
+    public Person(String firstName) {
+>>>>>>> 0e59c100487d2661f636acd77fbb1623d01c97a7
         this.firstName = firstName;
     }
 

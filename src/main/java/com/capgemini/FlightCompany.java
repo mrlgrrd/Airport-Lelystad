@@ -4,7 +4,7 @@ public class FlightCompany {
 
     // Constructor
 
-    public FlightCompany(String companyName){
+    public FlightCompany(String companyName) {
         this.companyName = companyName;
     }
 
