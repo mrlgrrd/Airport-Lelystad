@@ -4,11 +4,11 @@ import com.capgemini.ENationality;
 
 public class Person {
 
-    public Person(){
+    public Person() {
 
     }
 
-    public Person(String firstName){
+    public Person(String firstName) {
         this.firstName = firstName;
     }
 

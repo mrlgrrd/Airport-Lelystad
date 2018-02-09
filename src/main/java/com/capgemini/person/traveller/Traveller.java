@@ -8,7 +8,8 @@ public class Traveller extends Person {
     {
         System.out.println("A new traveller entered the airport.");
     }
-    public Traveller(boolean isCheckedIn){
+
+    public Traveller(boolean isCheckedIn) {
         this.isCheckedIn = isCheckedIn;
     }
 
