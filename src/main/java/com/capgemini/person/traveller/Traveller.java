@@ -1,5 +1,6 @@
 package com.capgemini.person.traveller;
 
+import com.capgemini.ENationality;
 import com.capgemini.person.Person;
 
 public class Traveller extends Person {
@@ -9,7 +10,7 @@ public class Traveller extends Person {
         System.out.println("A new traveller entered the airport.");
     }
 
-    public Traveller(boolean isCheckedIn) {
+    public Traveller(boolean isCheckedIn, double passportNumber, ENationality eNationality) {
         this.isCheckedIn = isCheckedIn;
     }
 
