@@ -2,7 +2,7 @@ package com.capgemini;
 
 public class TrafficControlTower {
 
-    private WindDirection windDirection;
+    private EWindDirection windDirection;
 
     private double windSpeed;
 
