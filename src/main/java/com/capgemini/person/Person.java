@@ -5,6 +5,7 @@ import com.capgemini.ENationality;
 public class Person {
 
     // Properties
+    private String uniqueNumber;
 
     private String firstName;
 
@@ -20,8 +21,16 @@ public class Person {
 
     private ENationality eNationality;
 
-    // Getters and setters
+    private String eMailAddress;
 
+    // Getters and setters
+    public String getUniqueNumber() {
+        return uniqueNumber;
+    }
+
+    public void setUniqueNumber(String uniqueNumber) {
+        this.uniqueNumber = uniqueNumber;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -78,4 +87,13 @@ public class Person {
     public void seteNationality(ENationality eNationality) {
         this.eNationality = eNationality;
     }
+
+    public String geteMailAddress() {
+        return eMailAddress;
+    }
+
+    public void seteMailAddress(String eMailAddress) {
+        this.eMailAddress = eMailAddress;
+    }
+
 }
