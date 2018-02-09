@@ -37,6 +37,8 @@ public class Traveller extends Person {
 
     private boolean needsBathroom;
 
+    private boolean hasVisa;
+
     // Getters and setters
 
 
@@ -120,5 +122,13 @@ public class Traveller extends Person {
 
     public void setNeedsBathroom(boolean needsBathroom) {
         this.needsBathroom = needsBathroom;
+    }
+
+    public boolean isHasVisa() {
+        return hasVisa;
+    }
+
+    public void setHasVisa(boolean hasVisa) {
+        this.hasVisa = hasVisa;
     }
 }
