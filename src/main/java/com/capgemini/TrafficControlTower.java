@@ -14,9 +14,14 @@ public class TrafficControlTower {
 
 
 
-    public static boolean runWayFree(){
+    public boolean askPermissionToLand(){
         // deze geeft boolean terug als runway free is
         // Hier moet if statements komen voor de runway
-        return true;
+        return;
+    }
+
+    public void askPermissionToTakeOff(){
+
+        return;
     }
 }
