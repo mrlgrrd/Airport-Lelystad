@@ -1,5 +1,6 @@
 package com.capgemini.person.traveller;
 
+import com.capgemini.EIdentityType;
 import com.capgemini.ENationality;
 import com.capgemini.person.Person;
 
@@ -18,7 +19,7 @@ public class Traveller extends Person {
 
     private String destination;
 
-    private double passportNumber;
+    private EIdentityType identityType;
 
     private boolean isCheckedIn;
 
@@ -49,16 +50,6 @@ public class Traveller extends Person {
 
     public void setDestination(String destination) {
         this.destination = destination;
-    }
-
-    @Override
-    public double getPassportNumber() {
-        return passportNumber;
-    }
-
-    @Override
-    public void setPassportNumber(double passportNumber) {
-        this.passportNumber = passportNumber;
     }
 
     public boolean isCheckedIn() {
