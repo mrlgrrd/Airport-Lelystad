@@ -1,4 +1,6 @@
-package com.capgemini;
+package com.capgemini.security;
+
+import com.capgemini.Security;
 
 public class HumanSecurity extends Security {
 
