@@ -39,6 +39,8 @@ public class Traveller extends Person {
 
     private boolean hasVisa;
 
+    private boolean travellerOnPlane;
+
     // Getters and setters
 
 
@@ -130,5 +132,13 @@ public class Traveller extends Person {
 
     public void setHasVisa(boolean hasVisa) {
         this.hasVisa = hasVisa;
+    }
+
+    public boolean isTravellerOnPlane() {
+        return travellerOnPlane;
+    }
+
+    public void setTravellerOnPlane(boolean travellerOnPlane) {
+        this.travellerOnPlane = travellerOnPlane;
     }
 }
