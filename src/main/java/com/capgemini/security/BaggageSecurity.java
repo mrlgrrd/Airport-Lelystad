@@ -8,4 +8,6 @@ public class BaggageSecurity extends Security {
 
     private String manualBaggageSearch;
 
+
+
 }
