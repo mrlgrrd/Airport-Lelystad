@@ -1,5 +1,6 @@
 package com.capgemini.person.traveller;
 
+import com.capgemini.EIdentityType;
 import com.capgemini.ENationality;
 import com.capgemini.person.Person;
 
@@ -10,8 +11,7 @@ public class Traveller extends Person {
         System.out.println("A new traveller entered the airport.");
     }
 
-    public Traveller(boolean isCheckedIn, double passportNumber, ENationality eNationality) {
-        this.isCheckedIn = isCheckedIn;
+    public Traveller() {
     }
 
     // Properties
@@ -19,7 +19,7 @@ public class Traveller extends Person {
 
     private String destination;
 
-    private double passportNumber;
+    private EIdentityType identityType;
 
     private boolean isCheckedIn;
 
@@ -41,11 +41,18 @@ public class Traveller extends Person {
 
     private boolean travellerOnPlane;
 
+<<<<<<< HEAD
     // For Customs
     private boolean departureCountryVisum;
     private boolean isDateCorrectOfDeparture;
 
 
+=======
+    // deze method start het check in process
+   /* public class checkIn(){
+
+    }*/
+>>>>>>> cf4051231687ee72bb453d7615f3594c91b5fdad
 
     // Getters and setters
 
@@ -56,16 +63,6 @@ public class Traveller extends Person {
 
     public void setDestination(String destination) {
         this.destination = destination;
-    }
-
-    @Override
-    public double getPassportNumber() {
-        return passportNumber;
-    }
-
-    @Override
-    public void setPassportNumber(double passportNumber) {
-        this.passportNumber = passportNumber;
     }
 
     public boolean isCheckedIn() {

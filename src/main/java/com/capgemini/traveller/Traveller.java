@@ -20,6 +20,8 @@ public class Traveller extends Person {
 
     private boolean isCheckedIn;
 
+    private boolean securityClearance;
+
     private boolean hasPassedCustoms;
 
     private boolean hasBoardingPass;
@@ -37,6 +39,97 @@ public class Traveller extends Person {
     private boolean needsBathroom;
 
     // Getters and setters
+
+    public String getDestination() {
+        return destination;
+    }
+
+    public void setDestination(String destination) {
+        this.destination = destination;
+    }
+
+    @Override
+    public double getPassportNumber() {
+        return passportNumber;
+    }
+
+    @Override
+    public void setPassportNumber(double passportNumber) {
+        this.passportNumber = passportNumber;
+    }
+
+    public boolean isCheckedIn() {
+        return isCheckedIn;
+    }
+
+    public void setCheckedIn(boolean checkedIn) {
+        isCheckedIn = checkedIn;
+    }
+
+    public boolean isHasPassedCustoms() {
+        return hasPassedCustoms;
+    }
+
+    public void setHasPassedCustoms(boolean hasPassedCustoms) {
+        this.hasPassedCustoms = hasPassedCustoms;
+    }
+
+    public boolean isHasBoardingPass() {
+        return hasBoardingPass;
+    }
+
+    public void setHasBoardingPass(boolean hasBoardingPass) {
+        this.hasBoardingPass = hasBoardingPass;
+    }
+
+    public boolean isHasCarryOnLuggage() {
+        return hasCarryOnLuggage;
+    }
+
+    public void setHasCarryOnLuggage(boolean hasCarryOnLuggage) {
+        this.hasCarryOnLuggage = hasCarryOnLuggage;
+    }
+
+    public boolean isHasBaggage() {
+        return hasBaggage;
+    }
+
+    public void setHasBaggage(boolean hasBaggage) {
+        this.hasBaggage = hasBaggage;
+    }
+
+    public boolean isNeedsAssistance() {
+        return needsAssistance;
+    }
+
+    public void setNeedsAssistance(boolean needsAssistance) {
+        this.needsAssistance = needsAssistance;
+    }
+
+    public boolean isHungry() {
+        return isHungry;
+    }
+
+    public void setHungry(boolean hungry) {
+        isHungry = hungry;
+    }
+
+    public boolean isThirsty() {
+        return isThirsty;
+    }
+
+    public void setThirsty(boolean thirsty) {
+        isThirsty = thirsty;
+    }
+
+    public boolean isNeedsBathroom() {
+        return needsBathroom;
+    }
+
+    public void setNeedsBathroom(boolean needsBathroom) {
+        this.needsBathroom = needsBathroom;
+    }
+
 
     //
 }
