@@ -13,8 +13,6 @@ public class Gate {
         this.gateNumber = gateNumber;
     }
 
-<<<<<<< HEAD
-=======
     public boolean isCheckBoardingPass() {
 
         return checkBoardingPass;
@@ -24,5 +22,4 @@ public class Gate {
 
         this.checkBoardingPass = checkBoardingPass;
     }
->>>>>>> 5ea3c58dab355a20a938bc84eb72f7c9f3185fbf
 }
