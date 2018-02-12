@@ -40,12 +40,11 @@ public class Traveller extends Person {
 
     private boolean travellerOnPlane;
 
-    // For Customs
+    // For Customs @ traveller you need to check if the visum date is before or on same date as departure date
     private boolean departureCountryVisum;
     private boolean isDateCorrectOfDeparture;
 
     // Getters and setters
-
 
     public String getDestination() {
         return destination;
