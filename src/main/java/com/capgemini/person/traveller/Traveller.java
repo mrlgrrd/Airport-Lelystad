@@ -40,6 +40,11 @@ public class Traveller extends Person {
 
     private boolean travellerOnPlane;
 
+    // For Security
+    private boolean forbiddenHandLuggage;
+    private boolean wearingForbiddenItems;
+    private boolean securityClearance;
+
     // For Customs
     private boolean departureCountryVisum;
     private boolean isDateCorrectOfDeparture;
@@ -149,5 +154,29 @@ public class Traveller extends Person {
 
     public void setDateCorrectOfDeparture(boolean dateCorrectOfDeparture) {
         isDateCorrectOfDeparture = dateCorrectOfDeparture;
+    }
+
+    public boolean isForbiddenHandLuggage() {
+        return forbiddenHandLuggage;
+    }
+
+    public void setForbiddenHandLuggage(boolean forbiddenHandLuggage) {
+        this.forbiddenHandLuggage = forbiddenHandLuggage;
+    }
+
+    public boolean isWearingForbiddenItems() {
+        return wearingForbiddenItems;
+    }
+
+    public void setWearingForbiddenItems(boolean wearingForbiddenItems) {
+        this.wearingForbiddenItems = wearingForbiddenItems;
+    }
+
+    public boolean isSecurityClearance() {
+        return securityClearance;
+    }
+
+    public void setSecurityClearance(boolean securityClearance) {
+        this.securityClearance = securityClearance;
     }
 }
