@@ -5,4 +5,6 @@ public class Baggage {
     private String IDnumberBaggage;
 
     // connect baggage to client that idNumber
+    // baggage drop off
+    // bagage pick up
 }

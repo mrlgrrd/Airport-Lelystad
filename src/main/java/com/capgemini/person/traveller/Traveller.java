@@ -41,6 +41,12 @@ public class Traveller extends Person {
 
     private boolean travellerOnPlane;
 
+    // For Customs
+    private boolean departureCountryVisum;
+    private boolean isDateCorrectOfDeparture;
+
+
+
     // Getters and setters
 
 
@@ -140,5 +146,21 @@ public class Traveller extends Person {
 
     public void setTravellerOnPlane(boolean travellerOnPlane) {
         this.travellerOnPlane = travellerOnPlane;
+    }
+
+    public boolean isDepartureCountryVisum() {
+        return departureCountryVisum;
+    }
+
+    public void setDepartureCountryVisum(boolean departureCountryVisum) {
+        this.departureCountryVisum = departureCountryVisum;
+    }
+
+    public boolean isDateCorrectOfDeparture() {
+        return isDateCorrectOfDeparture;
+    }
+
+    public void setDateCorrectOfDeparture(boolean dateCorrectOfDeparture) {
+        isDateCorrectOfDeparture = dateCorrectOfDeparture;
     }
 }
