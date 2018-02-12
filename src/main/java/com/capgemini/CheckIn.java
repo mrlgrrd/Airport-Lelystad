@@ -62,7 +62,9 @@ public class CheckIn {
             traveller.setBaggageCheckedIn(true);
             System.out.println("You and your baggage have been checked in.");
         }
+
         if (traveller.isCheckedIn()) {
+
             System.out.println("You are already checked in! No need to do that again.");
         } else {
             System.out.println("You are not allowed to use the check in desk.");

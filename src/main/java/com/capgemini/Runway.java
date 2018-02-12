@@ -12,6 +12,14 @@ public class Runway {
     // windkracht, of de baan bevroren is, etc.
     private boolean goodWeatherCondition;
 
+    private EWindDirection windDirection;
+
+    public Runway (EWindDirection windDirection, boolean isBroken, boolean isOccupied) {
+        this.windDirection = windDirection;
+        this.isBroken = isBroken;
+        this.isOccupied = isOccupied;
+    }
+
 
 
 
