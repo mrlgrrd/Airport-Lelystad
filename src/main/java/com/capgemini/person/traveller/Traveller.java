@@ -16,7 +16,6 @@ public class Traveller extends Person {
 
     // Properties
 
-
     private String destination;
 
     private EIdentityType identityType;
@@ -41,18 +40,9 @@ public class Traveller extends Person {
 
     private boolean travellerOnPlane;
 
-<<<<<<< HEAD
     // For Customs
     private boolean departureCountryVisum;
     private boolean isDateCorrectOfDeparture;
-
-
-=======
-    // deze method start het check in process
-   /* public class checkIn(){
-
-    }*/
->>>>>>> cf4051231687ee72bb453d7615f3594c91b5fdad
 
     // Getters and setters
 

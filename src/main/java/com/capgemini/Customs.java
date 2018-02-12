@@ -23,7 +23,7 @@ public class Customs {
 
     // check the passport if visum was required, if so do check if traveller behaved according to visum standards
     public void checkPassport(){
-        
+
         if(!traveller.isDateCorrectOfDeparture()){
             System.out.println("You are going behind bars");
             return;
@@ -32,7 +32,6 @@ public class Customs {
         System.out.println("Go to gate");
 
     }
-
 
     // getters and setters
 
