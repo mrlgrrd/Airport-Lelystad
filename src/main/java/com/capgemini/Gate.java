@@ -9,7 +9,7 @@ public class Gate {
     }
 
     public void setGateNumber(int gateNumber) {
-        
+
         this.gateNumber = gateNumber;
     }
 
