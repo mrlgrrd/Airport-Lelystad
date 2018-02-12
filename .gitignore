@@ -12,3 +12,5 @@ buildNumber.properties
 !/.mvn/wrapper/maven-wrapper.jar
 
 .idea/
+src/main/java/com/capgemini/CheckIn.java
+src/main/java/com/capgemini/Gate.java
