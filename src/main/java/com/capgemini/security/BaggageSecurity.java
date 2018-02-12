@@ -8,4 +8,7 @@ public class BaggageSecurity extends Security {
 
     private String manualBaggageSearch;
 
+    public BaggageSecurity(boolean checkedIn, boolean forbiddenLuggage) {
+        super(checkedIn, forbiddenLuggage);
+    }
 }
