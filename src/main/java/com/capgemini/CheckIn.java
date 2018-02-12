@@ -28,6 +28,7 @@ public class CheckIn {
             isCheckedIn = true;
             System.out.println("You have been checked in.");
         }
+
         if (isCheckedIn) {
             System.out.println("You are already checked in! No need to do that again.");
         } else {
