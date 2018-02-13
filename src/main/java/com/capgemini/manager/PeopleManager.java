@@ -7,6 +7,6 @@ public class PeopleManager {
 
     // hier wordt het proces van traveller die incheckt aangeroepen
 
-    
+
 
 }
