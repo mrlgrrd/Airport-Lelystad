@@ -14,4 +14,5 @@ public class BaggageSecurity extends Security {
         this.xray = xray;
         this.manualBaggageSearch = manualBaggageSearch;
     }
+
 }

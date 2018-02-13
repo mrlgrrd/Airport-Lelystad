@@ -1,5 +1,7 @@
 package com.capgemini.person.traveller;
 
+import com.capgemini.ECheckInType;
+import com.capgemini.EFlightDestinationType;
 import com.capgemini.EIdentityType;
 import com.capgemini.ENationality;
 import com.capgemini.person.Person;
@@ -12,6 +14,8 @@ public class Traveller extends Person {
     }
 
     public Traveller() {
+        checkInType = ECheckInType.SELFCHECKIN;
+        isCheckedIn = false;
     }
 
     // Properties
@@ -20,6 +24,10 @@ public class Traveller extends Person {
 
     private EIdentityType identityType;
 
+    private EFlightDestinationType flightDestinationType;
+
+    private ECheckInType checkInType;
+
     private boolean isCheckedIn;
 
     private boolean hasBoardingPass;
@@ -27,6 +35,8 @@ public class Traveller extends Person {
     private boolean hasCarryOnLuggage;
 
     private boolean hasBaggage;
+
+    private boolean baggageCheckedIn;
 
     private boolean needsAssistance;
 
@@ -46,11 +56,11 @@ public class Traveller extends Person {
     private boolean securityClearance;
 
     // For Customs
+    // For Customs @ traveller you need to check if the visum date is before or on same date as departure date
     private boolean departureCountryVisum;
     private boolean isDateCorrectOfDeparture;
 
     // Getters and setters
-
 
     public String getDestination() {
         return destination;
@@ -178,5 +188,37 @@ public class Traveller extends Person {
 
     public void setSecurityClearance(boolean securityClearance) {
         this.securityClearance = securityClearance;
+    }
+
+    public EIdentityType getIdentityType() {
+        return identityType;
+    }
+
+    public void setIdentityType(EIdentityType identityType) {
+        this.identityType = identityType;
+    }
+
+    public EFlightDestinationType getFlightDestinationType() {
+        return flightDestinationType;
+    }
+
+    public void setFlightDestinationType(EFlightDestinationType flightDestinationType) {
+        this.flightDestinationType = flightDestinationType;
+    }
+
+    public ECheckInType getCheckInType() {
+        return checkInType;
+    }
+
+    public void setCheckInType(ECheckInType checkInType) {
+        this.checkInType = checkInType;
+    }
+
+    public boolean isBaggageCheckedIn() {
+        return baggageCheckedIn;
+    }
+
+    public void setBaggageCheckedIn(boolean baggageCheckedIn) {
+        this.baggageCheckedIn = baggageCheckedIn;
     }
 }
