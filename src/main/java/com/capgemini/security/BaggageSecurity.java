@@ -8,12 +8,14 @@ public class BaggageSecurity extends Security {
     private String xray;
 
     private String manualBaggageSearch;
-        
+
+    public BaggageSecurity(Traveller traveller) {
+        super(traveller);
+    }
 
 
-
-    public BaggageSecurity(boolean checkedIn, boolean forbiddenLuggage) {
-        super(checkedIn, forbiddenLuggage);
+//    public BaggageSecurity(boolean checkedIn, boolean forbiddenLuggage) {
+//        super(checkedIn, forbiddenLuggage);
 
 //    public BaggageSecurity(Traveller traveller, String xray, String manualBaggageSearch) {
 //        super(traveller);
