@@ -57,7 +57,9 @@ public class Traveller extends Person {
 
     // For Security
     private boolean forbiddenHandLuggage;
+    private boolean prosecuteHandLuggage;
     private boolean wearingForbiddenItems;
+    private boolean prosecuteWearingForbiddenItems;
     private boolean securityClearance;
 
     // For Customs
@@ -225,5 +227,21 @@ public class Traveller extends Person {
 
     public void setBaggageCheckedIn(boolean baggageCheckedIn) {
         this.baggageCheckedIn = baggageCheckedIn;
+    }
+
+    public boolean isProsecuteHandLuggage() {
+        return prosecuteHandLuggage;
+    }
+
+    public void setProsecuteHandLuggage(boolean prosecuteHandLuggage) {
+        this.prosecuteHandLuggage = prosecuteHandLuggage;
+    }
+
+    public boolean isProsecuteWearingForbiddenItems() {
+        return prosecuteWearingForbiddenItems;
+    }
+
+    public void setProsecuteWearingForbiddenItems(boolean prosecuteWearingForbiddenItems) {
+        this.prosecuteWearingForbiddenItems = prosecuteWearingForbiddenItems;
     }
 }

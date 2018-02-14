@@ -9,9 +9,4 @@ public class HumanSecurity extends Security {
 
     private String bodyScan;
 
-    public HumanSecurity(Traveller traveller, String humanFrisk, String bodyScan) {
-        super(traveller);
-        this.humanFrisk = humanFrisk;
-        this.bodyScan = bodyScan;
-    }
 }
