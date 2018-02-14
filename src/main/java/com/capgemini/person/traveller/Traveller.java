@@ -18,6 +18,11 @@ public class Traveller extends Person {
         isCheckedIn = false;
     }
 
+    public Traveller(ECheckInType checkInType) {
+        this.checkInType = checkInType;
+        this.isCheckedIn = false;
+    }
+
     // Properties
 
     private String destination;
