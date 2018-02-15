@@ -4,43 +4,31 @@ import com.capgemini.person.traveller.Traveller;
 
 public class Customs {
 
-    private boolean passportChecked;
-
     private Traveller traveller;
 
-
-    // we are checking traveller if travelling to a European country or not
+    /**
+     * Check if people European or Non-European
+     * @param traveller
+     */
     public void checkEU(Traveller traveller){
-        //where are you going?
         if(traveller.isEU()){
             System.out.println("You can go to your gate");
             return;
         }
 
-        // you are going outside the EU
-        checkPassport(traveller);
+        checkVisumDate(traveller);
     }
 
-    // check the passport if visum was required, if so do check if traveller behaved according to visum standards
-    public void checkPassport(Traveller traveller){
-
+    /**
+     * Check when people are Non-European if visum date of departure is correct
+     * @param traveller
+     */
+    public void checkVisumDate(Traveller traveller){
         if(!traveller.isDateCorrectOfDeparture()){
             System.out.println("You are going behind bars");
             return;
         }
-
         System.out.println("Go to gate");
-
-    }
-
-    // getters and setters
-
-    public boolean isPassportChecked() {
-        return passportChecked;
-    }
-
-    public void setPassportChecked(boolean passportChecked) {
-        this.passportChecked = passportChecked;
     }
 
     public Traveller getTraveller() {
