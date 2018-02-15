@@ -19,6 +19,8 @@ public class CheckIn {
 
     private Boardingpass boardingpass;
 
+    private CheckIn checkInArea;
+
     private ArrayList<Traveller> checkedInTravellers = new ArrayList<Traveller>();
 
     /**
@@ -32,7 +34,10 @@ public class CheckIn {
      * <p>
      * the check in method does not yet start the creation of the boarding pass!
      */
+    public void initializeCheckIn(CheckIn checkIn) {
+        this.checkInArea = checkIn;
 
+    }
 
     public void checkInDesk(Traveller traveller) {
 
@@ -90,13 +95,11 @@ public class CheckIn {
             traveller.setBaggageCheckedIn(true);
             System.out.println("Thank you for dropping off your baggage, please continue to Customs.");
             return;
-        } else if(!traveller.isHasBaggage()){
+        } else if (!traveller.isHasBaggage()) {
             traveller.setBaggageCheckedIn(true);
             System.out.println("You have no luggage to check in, please continue to Customs.");
             return;
-        }
-
-        else {
+        } else {
             System.out.println("You are not allowed to use baggage drop off.");
         }
     }
