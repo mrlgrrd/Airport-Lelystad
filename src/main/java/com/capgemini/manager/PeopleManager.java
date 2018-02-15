@@ -16,9 +16,9 @@ public class PeopleManager {
 
        // hier worden nieuwe travellers gegenereerd
 
-       Traveller robbert = new Traveller();
-
    }
+
+    Traveller robbert = new Traveller();
 
     // hier worden nieuwe employees gegenereerd
 
