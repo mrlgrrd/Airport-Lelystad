@@ -47,13 +47,13 @@ public class CheckIn {
             return;
         }
 
-        if (!traveller.isCheckedIn() && ECheckInType.SELFCHECKIN.equals(traveller.getCheckInType())) {
+        else if (!traveller.isCheckedIn() && ECheckInType.SELFCHECKIN.equals(traveller.getCheckInType())) {
             selfCheckIn(traveller);
             checkedInTravellers.add(traveller);
             return;
         }
 
-        if (traveller.isCheckedIn()) {
+        else if (traveller.isCheckedIn()) {
             System.out.println("You are already checked in! No need to do that again.");
             return;
         } else {

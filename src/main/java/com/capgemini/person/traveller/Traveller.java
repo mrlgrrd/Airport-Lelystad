@@ -13,18 +13,14 @@ public class Traveller extends Person {
         System.out.println("A new traveller entered the airport.");
     }
 
-    public Traveller() {
-        checkInType = ECheckInType.SELFCHECKIN;
-        isCheckedIn = false;
-    }
-
-    public Traveller(ECheckInType checkInType) {
+    public Traveller(ECheckInType checkInType, boolean isEU, boolean isDateCorrectOfDeparture) {
         this.checkInType = checkInType;
         this.isCheckedIn = false;
+        this.isEU = isEU;
+        this.isDateCorrectOfDeparture = isDateCorrectOfDeparture;
     }
 
     // Properties
-
 
 
     private String destination;
@@ -34,6 +30,8 @@ public class Traveller extends Person {
     private EFlightDestinationType flightDestinationType;
 
     private ECheckInType checkInType;
+
+    private boolean isEU;
 
     private boolean isCheckedIn;
 
@@ -68,6 +66,7 @@ public class Traveller extends Person {
     // For Customs @ traveller you need to check if the visum date is before or on same date as departure date
     private boolean departureCountryVisum;
     private boolean isDateCorrectOfDeparture;
+
 
     // Getters and setters
 

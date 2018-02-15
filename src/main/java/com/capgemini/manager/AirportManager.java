@@ -1,12 +1,19 @@
 package com.capgemini.manager;
 
-import com.capgemini.CheckIn;
-import com.capgemini.EWindDirection;
-import com.capgemini.Runway;
-import com.capgemini.TrafficControlTower;
+import com.capgemini.*;
+import com.capgemini.person.traveller.Traveller;
+import com.capgemini.security.Security;
+
+import java.util.ArrayList;
 
 public class AirportManager {
 
+    /**
+     * create a list of travellers
+     */
+
+    Traveller traveller;
+    CheckIn checkIn;
 
     // aanmaken nieuwe controle toren
     TrafficControlTower trafficControlTower = new TrafficControlTower();
@@ -17,28 +24,51 @@ public class AirportManager {
 
     // aanmaken van checkInDesk
 
-    CheckIn checkInArea = new CheckIn();
 
-
-
-    // aanroepen van de peoplemanager om de travellers en employees aan te maken
-    public void makePeopleManager() {
-        PeopleManager peopleManager = new PeopleManager();
+    public void makeCheckIn() {
+        CheckIn checkInArea = new CheckIn();
+        this.checkIn = checkInArea;
+        checkInArea.checkInDesk(this.traveller);
     }
 
-    // aanroepen van de flightmanager om flights te genereren
 
-    // aanroepen van de flightcompany manager om flightcompanies te genereren
+    // creeren van de peoplemanager om de travellers en employees aan te maken
 
-    // aanroepen van vehiclemanager om vehicles te creëren
+    private void makePeopleManager() {
+        PeopleManager peopleManager = new PeopleManager();
+        System.out.println("people manager made");
+    }
+
+    /**
+     * this method creates the security
+     */
+    public void makeSecurity(){
+        Security security = new Security();
+        security.checkSecurityClearance(traveller);
+    }
 
     // start het vliegveld
     public void startAirport() {
         makePeopleManager();
+        makeTravellers();
+        makeCheckIn();
+        makeSecurity();
+        makeCustoms();
 
     }
 
-    public CheckIn getCheckInArea() {
-        return checkInArea;
+    public void makeTravellers() {
+        // hier worden nieuwe travellers gegenereerd
+
+        Traveller robbert = new Traveller(ECheckInType.SELFCHECKIN, false, true);
+        this.traveller = robbert;
+        System.out.println("robbert made");
+
     }
+
+    public void makeCustoms(){
+        Customs customs = new Customs();
+        customs.checkEU();
+    }
+
 }
