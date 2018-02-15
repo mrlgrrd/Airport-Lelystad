@@ -9,15 +9,18 @@ import java.util.ArrayList;
 public class PeopleManager {
 
 //    public void makeTravellers() {
-//        // hier worden nieuwe travellers gegenereerd
-//
-//        Traveller robbert = new Traveller(ECheckInType.SELFCHECKIN);
-//        System.out.println("robbert made");
-//
-//
-//    }
+////        // hier worden nieuwe travellers gegenereerd
+////
+////        Traveller robbert = new Traveller(ECheckInType.SELFCHECKIN);
+////        System.out.println("robbert made");
+////
+////
+////    }
 
 
+
+
+    Traveller robbert = new Traveller();
 
     // hier worden nieuwe employees gegenereerd
 

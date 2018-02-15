@@ -4,7 +4,7 @@ import com.capgemini.ECheckInType;
 import com.capgemini.EFlightDestinationType;
 import com.capgemini.EIdentityType;
 import com.capgemini.ENationality;
-import com.capgemini.person.Person;
+import com.capgemini.person.*;
 
 public class Traveller extends Person {
 
@@ -13,7 +13,15 @@ public class Traveller extends Person {
         System.out.println("A new traveller entered the airport.");
     }
 
+
+    public Traveller() {
+        checkInType = ECheckInType.SELFCHECKIN;
+        isCheckedIn = false;
+    }
+
     public Traveller(ECheckInType checkInType, boolean isEU, boolean isDateCorrectOfDeparture) {
+        this.isEU = isEU;
+        this.isDateCorrectOfDeparture = isDateCorrectOfDeparture;
         this.checkInType = checkInType;
         this.isCheckedIn = false;
         this.isEU = isEU;
@@ -21,7 +29,6 @@ public class Traveller extends Person {
     }
 
     // Properties
-
 
     private String destination;
 
@@ -64,7 +71,6 @@ public class Traveller extends Person {
 
     // For Customs
     // For Customs @ traveller you need to check if the visum date is before or on same date as departure date
-    private boolean departureCountryVisum;
     private boolean isDateCorrectOfDeparture;
 
 
@@ -158,13 +164,6 @@ public class Traveller extends Person {
         this.travellerOnPlane = travellerOnPlane;
     }
 
-    public boolean isDepartureCountryVisum() {
-        return departureCountryVisum;
-    }
-
-    public void setDepartureCountryVisum(boolean departureCountryVisum) {
-        this.departureCountryVisum = departureCountryVisum;
-    }
 
     public boolean isDateCorrectOfDeparture() {
         return isDateCorrectOfDeparture;
@@ -244,5 +243,13 @@ public class Traveller extends Person {
 
     public void setProsecuteWearingForbiddenItems(boolean prosecuteWearingForbiddenItems) {
         this.prosecuteWearingForbiddenItems = prosecuteWearingForbiddenItems;
+    }
+
+    public boolean isEU() {
+        return isEU;
+    }
+
+    public void setEU(boolean EU) {
+        isEU = EU;
     }
 }
