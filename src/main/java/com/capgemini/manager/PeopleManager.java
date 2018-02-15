@@ -9,25 +9,22 @@ public class PeopleManager {
 
     private Traveller traveller;
 
-    private CheckIn checkIn;
+    private CheckIn checkInArea;
 
    public void makeTravellers() {
        ArrayList<Traveller> travellers = new ArrayList<Traveller>();
 
        // hier worden nieuwe travellers gegenereerd
+
        Traveller robbert = new Traveller();
 
    }
+
     // hier worden nieuwe employees gegenereerd
 
-    
+
 
     // hier wordt het proces van traveller die incheckt aangeroepen
-
-
-
-
-
 
 
 

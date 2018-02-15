@@ -1,6 +1,7 @@
 package com.capgemini;
 
 
+import com.capgemini.manager.AirportManager;
 import com.capgemini.person.traveller.Traveller;
 
 
@@ -14,6 +15,8 @@ public class App {
 
         System.out.println("Hello Lelystad!");
 
+        AirportManager airportManager = new AirportManager();
+        airportManager.startAirport();
 
     }
 
