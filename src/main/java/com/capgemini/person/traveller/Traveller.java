@@ -25,6 +25,8 @@ public class Traveller extends Person {
 
     // Properties
 
+
+
     private String destination;
 
     private EIdentityType identityType;
