@@ -8,21 +8,21 @@ public class Customs {
 
     private Traveller traveller;
 
-    private Boardingpass boardingpass;
 
     // we are checking traveller if travelling to a European country or not
-    public void checkEU(){
+    public void checkEU(Traveller traveller){
         //where are you going?
-        if(boardingpass.isEU()){
+        if(traveller.isEU()){
             System.out.println("You can go to your gate");
+            return;
         }
 
         // you are going outside the EU
-        checkPassport();
+        checkPassport(traveller);
     }
 
     // check the passport if visum was required, if so do check if traveller behaved according to visum standards
-    public void checkPassport(){
+    public void checkPassport(Traveller traveller){
 
         if(!traveller.isDateCorrectOfDeparture()){
             System.out.println("You are going behind bars");
