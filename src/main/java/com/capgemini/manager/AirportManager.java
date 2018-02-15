@@ -54,6 +54,16 @@ public class AirportManager {
         makeCheckIn();
         makeSecurity();
         makeCustoms();
+        System.out.println("You may enter the plane.");
+        System.out.println("Enjoy your flight!");
+        System.out.println("                                                                   \n" +
+                "                            !                                                  \n" +
+                "                            !                                                  \n" +
+                "                           /_\\                                                 \n" +
+                "                    =====/` - '\\=====                                          \n" +
+                "                        ( ( O ) )                                              \n" +
+                " --______-------________/\\  -  /\\_______--------______------           \n" +
+                "      ---------____***___/`---'\\___***____---------- ");
 
     }
 
@@ -68,7 +78,7 @@ public class AirportManager {
 
     public void makeCustoms(){
         Customs customs = new Customs();
-        customs.checkEU();
+        customs.checkEU(traveller);
     }
 
 }
