@@ -1,11 +1,28 @@
 package com.capgemini.manager;
 
+<<<<<<< HEAD
 
 import com.capgemini.CheckIn;
 import com.capgemini.EWindDirection;
 import com.capgemini.Runway;
 import com.capgemini.TrafficControlTower;
 
+=======
+import com.capgemini.*;
+import com.capgemini.person.traveller.Traveller;
+import com.capgemini.security.Security;
+
+import java.util.ArrayList;
+
+public class AirportManager {
+
+    /**
+     * create a list of travellers
+     */
+
+    Traveller traveller;
+    CheckIn checkIn;
+>>>>>>> 3eccb92caee92f1b2bbbb0ca0662d507ddf66539
 
 public class AirportManager {
     // aanmaken nieuwe controle toren
@@ -16,28 +33,66 @@ public class AirportManager {
     Runway runway2 = new Runway(EWindDirection.SOUTH, false, false);
 
     // aanmaken van checkInDesk
+<<<<<<< HEAD
     CheckIn checkInArea = new CheckIn();
+=======
 
 
+    public void makeCheckIn() {
+        CheckIn checkInArea = new CheckIn();
+        this.checkIn = checkInArea;
+        checkInArea.checkInDesk(this.traveller);
+    }
+>>>>>>> 3eccb92caee92f1b2bbbb0ca0662d507ddf66539
 
-    // aanroepen van de peoplemanager om de travellers en employees aan te maken
-    public void makePeopleManager() {
+
+    // creeren van de peoplemanager om de travellers en employees aan te maken
+
+    private void makePeopleManager() {
         PeopleManager peopleManager = new PeopleManager();
+        System.out.println("people manager made");
     }
 
-    // aanroepen van de flightmanager om flights te genereren
-
-    // aanroepen van de flightcompany manager om flightcompanies te genereren
-
-    // aanroepen van vehiclemanager om vehicles te creëren
+    /**
+     * this method creates the security
+     */
+    public void makeSecurity(){
+        Security security = new Security();
+        security.checkSecurityClearance(traveller);
+    }
 
     // start het vliegveld
     public void startAirport() {
         makePeopleManager();
+        makeTravellers();
+        makeCheckIn();
+        makeSecurity();
+        makeCustoms();
+        System.out.println("You may enter the plane.");
+        System.out.println("Enjoy your flight!");
+        System.out.println("                                                                   \n" +
+                "                            !                                                  \n" +
+                "                            !                                                  \n" +
+                "                           /_\\                                                 \n" +
+                "                    =====/` - '\\=====                                          \n" +
+                "                        ( ( O ) )                                              \n" +
+                " --______-------________/\\  -  /\\_______--------______------           \n" +
+                "      ---------____***___/`---'\\___***____---------- ");
 
     }
 
-    public CheckIn getCheckInArea() {
-        return checkInArea;
+    public void makeTravellers() {
+        // hier worden nieuwe travellers gegenereerd
+
+        Traveller robbert = new Traveller(ECheckInType.SELFCHECKIN, false, true);
+        this.traveller = robbert;
+        System.out.println("robbert made");
+
     }
+
+    public void makeCustoms(){
+        Customs customs = new Customs();
+        customs.checkEU(traveller);
+    }
+
 }
