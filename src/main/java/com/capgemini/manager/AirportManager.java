@@ -16,8 +16,8 @@ public class AirportManager {
      * create a list of travellers
      */
 
-    Traveller traveller;
-    CheckIn checkIn;
+    private Traveller traveller;
+    private CheckIn checkIn;
 
         // aanmaken nieuwe controle toren
         TrafficControlTower trafficControlTower = new TrafficControlTower();
