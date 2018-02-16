@@ -1,13 +1,13 @@
 package com.capgemini.manager;
 
+
 import com.capgemini.CheckIn;
 import com.capgemini.EWindDirection;
 import com.capgemini.Runway;
 import com.capgemini.TrafficControlTower;
 
+
 public class AirportManager {
-
-
     // aanmaken nieuwe controle toren
     TrafficControlTower trafficControlTower = new TrafficControlTower();
 
@@ -16,7 +16,6 @@ public class AirportManager {
     Runway runway2 = new Runway(EWindDirection.SOUTH, false, false);
 
     // aanmaken van checkInDesk
-
     CheckIn checkInArea = new CheckIn();
 
 
